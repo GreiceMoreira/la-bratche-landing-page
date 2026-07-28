@@ -1,1 +1,14 @@
 @import "tailwindcss";
+
+@theme {
+    --color-brand-orange: #EF8535;
+    --color-brand-gold: #FFDE59;
+    --color-brand-flame: #FF914D;
+
+    --color-bg-primary: #12100E;
+    --color-bg-secondary: #1C1815;
+    --color-bg-surface: #26201B;
+
+    --color-text-primary: #FFFFFF;
+    --color-text-secondary: #D8D1C8;
+}

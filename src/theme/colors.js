@@ -1,15 +1,23 @@
 export const colors = {
-  primary: "#B65A2A",
-  primaryDark: "#8C431D",
+  brand: {
+    orange: "#EF8535",
+    gold: "#FFDE59",
+    flame: "#FF914D",
+  },
 
-  background: "#121212",
-  surface: "#1E1E1E",
+  background: {
+    primary: "#12100E", // carvão, não preto puro
+    secondary: "#1C1815",
+    surface: "#26201B",
+  },
 
-  text: "#FFFFFF",
-  textSecondary: "#CFCFCF",
+  text: {
+    primary: "#FFFFFF",
+    secondary: "#D8D1C8",
+    muted: "#A79D92",
+  },
 
-  accent: "#D99A4E",
-
-  success: "#3FAE5A",
-  error: "#D14343",
+  border: {
+    subtle: "#3A3028",
+  },
 }
