@@ -31,7 +31,7 @@ export default function Hero() {
                     </p>
 
                     <div className="mt-8">
-                        <Button>
+                        <Button href="https://wa.me/5551984599878?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento.">
                             Solicitar orçamento
                         </Button>
                     </div>
