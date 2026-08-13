@@ -3,6 +3,7 @@ export default function Button ({
     href,
     className = "",
     variant = "primary",
+    onClick,
 }) {
       const variants = {
     primary: `
@@ -38,7 +39,7 @@ export default function Button ({
     }
 
     return (
-        <button className={styles}>
+        <button className={styles} onClick={onClick}>
             {children}
         </button>
     )

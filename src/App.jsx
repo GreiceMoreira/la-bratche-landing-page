@@ -4,6 +4,8 @@ import Section from './components/Section'
 import Layout from './components/Layout'
 import Button from './components/Button'
 import Hero from './sections/Hero'
+import { experiences } from './components/experience/experiences'
+import Experiences from './sections/Experiences'
 
 function App() {
   return (
@@ -29,7 +31,7 @@ function App() {
         </Container>
       </Section> */}
       <Hero/>
-
+      <Experiences/>
 
     </Layout>
 
