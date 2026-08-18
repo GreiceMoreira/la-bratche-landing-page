@@ -1,5 +1,6 @@
 import Container from "../components/Container";
 import ExperienceCard from "../components/experience/ExperienceCard";
+import ExperienceDetails from "../components/experience/ExperienceDetails";
 import { experiences } from "../components/experience/experiences";
 import ExperienceTabs from "../components/experience/ExperienceTabs";
 import Section from "../components/Section";
@@ -25,7 +26,9 @@ export default function Experiences() {
                 </div>
                
                <div className="grid gap-8 md:grid-cols-3">
-                {experiences.map((experience) => (
+                {experiences
+                    .filter((experience) => experience.active)
+                    .map((experience) => (
                     <ExperienceCard
                         key={experience.id}
                         experience={experience}
@@ -35,6 +38,7 @@ export default function Experiences() {
                 
             
             </Container>
+            <ExperienceDetails experience={experiences[0]}/>
 
         </Section>
     );
