@@ -1,7 +1,7 @@
 import Container from "../components/Container";
 import ExperienceCard from "../components/experience/ExperienceCard";
 import ExperienceDetails from "../components/experience/ExperienceDetails";
-import { experiences } from "../components/experience/experiences";
+import { experiences } from "../data/experiences";
 import ExperienceTabs from "../components/experience/ExperienceTabs";
 import Section from "../components/Section";
 

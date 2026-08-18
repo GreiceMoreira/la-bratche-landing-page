@@ -1,6 +1,6 @@
 import {GiBarbecue, GiHamburger} from "react-icons/gi";
 import { MdOutlineKebabDining } from "react-icons/md";
-import laBratcheImage from "../../assets/images/LaBratche.png";
+import laBratcheImage from "../assets/images/LaBratche.png";
 
 
 export const experiences = [

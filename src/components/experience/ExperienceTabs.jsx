@@ -1,6 +1,6 @@
 import Button from "../Button";
 import ExperienceCard from "./ExperienceCard";
-import { experiences } from "./experiences";
+import { experiences } from "../../data/experiences";
 import { useState } from "react";
 
 export default function ExperienceTabs() {

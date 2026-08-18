@@ -4,8 +4,9 @@ import Section from './components/Section'
 import Layout from './components/Layout'
 import Button from './components/Button'
 import Hero from './sections/Hero'
-import { experiences } from './components/experience/experiences'
+import { experiences } from './data/experiences'
 import Experiences from './sections/Experiences'
+import Gallery from './sections/Gallery'
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
       </Section> */}
       <Hero/>
       <Experiences/>
+      <Gallery/>
 
     </Layout>
 

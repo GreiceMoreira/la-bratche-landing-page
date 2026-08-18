@@ -15,3 +15,22 @@
 
     --color-border-subtle: #3A3028;
 }
+
+.gallery-scroll::-webkit-scrollbar {
+  height: 6px;
+}
+
+.gallery-scroll::-webkit-scrollbar-track {
+  background: var(--color-bg-surface);
+  border-radius: 999px;
+}
+
+.gallery-scroll::-webkit-scrollbar-thumb {
+  background: var(--color-brand-orange);
+  border-radius: 999px;
+}
+
+.gallery-scroll {
+  scrollbar-color: var(--color-brand-orange) var(--color-bg-surface);
+  scrollbar-width: thin;
+}
