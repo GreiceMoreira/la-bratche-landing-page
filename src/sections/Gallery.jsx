@@ -125,7 +125,7 @@ export default function Gallery() {
             </div>
 
             {totalPages > 1 && (
-                <div className="mt-6 flex justify-center gap-3">
+                <div className="mt-6 hidden justify-center gap-3 md:flex">
                 <button
                     onClick={previousPage}
                     aria-label="Fotos anteriores"

@@ -1,4 +1,4 @@
-// import galleryImage1 from "../assets/images/gallery/image-1.jpg";
+import galleryImage1 from "../assets/images/gallery/image-1.jpeg";
 // import galleryImage2 from "../assets/images/gallery/image-2.jpg";
 // import galleryImage3 from "../assets/images/gallery/image-3.jpg";
 // import galleryImage4 from "../assets/images/gallery/image-4.jpg";
@@ -12,7 +12,7 @@ import Test from "../assets/images/Test.jpg";
 export const galleryImages = [
   {
     id: "gallery-1",
-    src: LaBratche,
+    src: galleryImage1,
     alt: "La Bratche preparando churrasco na brasa",
   },
   {
