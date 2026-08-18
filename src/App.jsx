@@ -7,6 +7,8 @@ import Hero from './sections/Hero'
 import { experiences } from './data/experiences'
 import Experiences from './sections/Experiences'
 import Gallery from './sections/Gallery'
+import Contact from './sections/Contact'
+import Footer from './sections/Footer'
 
 function App() {
   return (
@@ -34,6 +36,8 @@ function App() {
       <Hero/>
       <Experiences/>
       <Gallery/>
+      <Contact/>
+      <Footer/>
 
     </Layout>
 
