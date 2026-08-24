@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Quicksand:wght@400;500;600;700&display=swap');
+
 @import "tailwindcss";
 
 @theme {
@@ -14,6 +16,9 @@
     --color-text-muted: #A79D92;
 
     --color-border-subtle: #3A3028;
+
+    --font-display: "Marcellus", serif;
+    --font-body: "Quicksand", sans-serif;
 }
 
 .gallery-scroll::-webkit-scrollbar {
@@ -33,4 +38,8 @@
 .gallery-scroll {
   scrollbar-color: var(--color-brand-orange) var(--color-bg-surface);
   scrollbar-width: thin;
+}
+
+body {
+  font-family: var(--font-body);
 }

@@ -10,7 +10,7 @@ import Section from "../components/Section";
 export default function Experiences() {
     return (
         <Section>
-            <Container>
+            {/* <Container>
                 <div className="text-center">
                     <p className="text-sm font-semibold uppercase tracking-widest text-brand-orange">
                         Nossas experiêcias
@@ -37,7 +37,7 @@ export default function Experiences() {
                </div>
                 
             
-            </Container>
+            </Container> */}
             <ExperienceDetails experience={experiences[0]}/>
 
         </Section>

@@ -53,6 +53,7 @@ export const experiences = [
           {         
             id:"entrecot",
             name: "Entrecot",
+            description: " Um dos cortes protagonistas do churrasco",
             featured: true,
             available: true,
           },
@@ -97,6 +98,7 @@ export const experiences = [
           {         
             id:"paleta-atlatida",
             name: "Paleta Atlântida",
+            description: "Prêmio 2026",
             featured: true,
             available: true,
           },

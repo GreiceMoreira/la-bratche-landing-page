@@ -1,8 +1,8 @@
 import galleryImage1 from "../assets/images/gallery/image-1.jpeg";
-// import galleryImage2 from "../assets/images/gallery/image-2.jpg";
-// import galleryImage3 from "../assets/images/gallery/image-3.jpg";
-// import galleryImage4 from "../assets/images/gallery/image-4.jpg";
-// import galleryImage5 from "../assets/images/gallery/image-5.jpg";
+import galleryImage2 from "../assets/images/meats/meats.jpg";
+import galleryImage3 from "../assets/images/sides/sides.jpg";
+import galleryImage4 from "../assets/images/desserts/banana.jpg";
+import galleryImage5 from "../assets/images/desserts/abacaxi.jpg";
 // import galleryImage6 from "../assets/images/gallery/image-6.jpg";
 // import galleryImage7 from "../assets/images/gallery/image-7.jpg";
 // import galleryImage8 from "../assets/images/gallery/image-8.jpg";
@@ -17,22 +17,22 @@ export const galleryImages = [
   },
   {
     id: "gallery-2",
-    src: LaBratche,
+    src: galleryImage2,
     alt: "Carnes selecionadas preparadas na brasa",
   },
   {
     id: "gallery-3",
-    src: LaBratche,
+    src: galleryImage3,
     alt: "Experiência La Bratche",
   },
   {
     id: "gallery-4",
-    src: LaBratche,
+    src: galleryImage4,
     alt: "Churrasco La Bratche",
   },
   {
     id: "gallery-5",
-    src: LaBratche,
+    src: galleryImage5,
     alt: "Carnes assadas na brasa",
   },
   {

@@ -1,6 +1,8 @@
-
-
-
+import MenuSection from "./MenuSection";
+import meatsImage from "../../assets/images/meats/meats.jpg";
+import sidesImage from "../../assets/images/sides/sides.jpg"
+import pineappleImage from "../../assets/images/desserts/abacaxi.jpg";
+import bananaImage from "../../assets/images/desserts/banana.jpg";
 
 export default function ExperienceDetails({ experience }) {
     const getMenuItem = (itemId) => {
@@ -67,141 +69,48 @@ export default function ExperienceDetails({ experience }) {
                 </div>
             </div>
         </section>
+        
+        <MenuSection
+            id="meats"
+            eyebrow="Da brasa à mesa"
+            title="Carnes selecionadas"
+            description="Cortes selecionados e preparados na brasa para valorizar cada sabor."
+            image={{
+                src: meatsImage,
+                alt: "Carnes sendo preparadas na brasa",
+            }}
+            items={experience.details.meats} 
+        />
 
+        <MenuSection
+            id="sides"
+            eyebrow="Para acompanhar"
+            title="Acompanhamentos"
+            description="Sabores pensados para acompanhar as carnes e completar a experiência."
+            image= {{
+                src: sidesImage,
+                alt: "Cebola, pimentão e pão LaBratche",
+            }}
+            items={experience.details.sides} 
+        />
 
-        <section id="meats" aria-labelledby="meats-title" className="mt-20">
-
-            <div className="text-center">
-                <p className="text-sm font-semibold uppercase tracking-[0.2em] text-brand-orange">
-                    Da brasa à mesa
-                </p>
-                <h3 id="meats-title" className="mt-2 text-3xl font-semibold text-text-primary">
-                    Carnes selecionadas
-                </h3>
-                
-                <p className="mx-auto mt-4 max-w-2xl text-text-muted">
-                    Cortes selecionados e preparados na brasa para valorizar cada sabor.
-                </p>
-            </div>
-
-            <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-                {experience.details.meats
-                    .filter((meat) => meat.available)
-                    .map((meat)=> (
-                        <div
-                            key={meat.id}
-                            className={`rounded-xl border p-5 transition-all duration-300 ${
-                                meat.featured
-                                ? "border-brand-orange bg-brand-orange/5 shadow-lg"
-                                : "border-border-subtle bg-bg-surface"
-                               }`} 
-                        >
-                            <h4 className="text-lg font-semibold text-text-primary">
-                                {meat.name}
-                            </h4>
-
-                            {meat.description && (
-                                <p className="mt-1 text-sm text-text-muted">
-                                    {meat.description}
-                                </p>
-                            )}
-                        </div>
-                    ))
-                }
-            </div>
-
-            
-        </section>
-
-        <section id="sides" aria-labelledby="sides-title" className="mt-20">
-            <div className="text-center">
-                <p className="text-sm font-semibold uppercase tracking-[0.2em] text-brand-orange">
-                Para acompanhar
-                </p>
-
-                <h3
-                id="sides-title"
-                className="mt-2 text-3xl font-semibold text-text-primary"
-                >
-                Acompanhamentos
-                </h3>
-
-                <p className="mx-auto mt-4 max-w-2xl text-text-muted">
-                Sabores pensados para acompanhar as carnes e completar a experiência.
-                </p>
-            </div>
-
-            <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-                {experience.details.sides
-                .filter((side) => side.available)
-                .map((side) => (
-                    <div
-                    key={side.id}
-                    className={`rounded-xl border p-5 transition-all duration-300 ${
-                        side.featured
-                        ? "border-brand-orange bg-brand-orange/5 shadow-lg"
-                        : "border-border-subtle bg-bg-surface"
-                    }`}
-                    >
-                    <h4 className="text-lg font-semibold text-text-primary">
-                        {side.name}
-                    </h4>
-
-                    {side.description && (
-                        <p className="mt-1 text-sm text-text-muted">
-                        {side.description}
-                        </p>
-                    )}
-                    </div>
-                ))}
-            </div>
-            
-        </section>
-
-        <section id="desserts" aria-labelledby="desserts-title" className="mt-20">
-            <div className="text-center">
-                <p className="text-sm font-semibold uppercase tracking-[0.2em] text-brand-orange">
-                Para finalizar
-                </p>
-
-                <h3
-                id="desserts-title"
-                className="mt-2 text-3xl font-semibold text-text-primary"
-                >
-                Sobremesas
-                </h3>
-
-                <p className="mx-auto mt-4 max-w-2xl text-text-muted">
-                Um toque especial para encerrar a experiência.
-                </p>
-            </div>
-
-            <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-                {experience.details.desserts
-                .filter((dessert) => dessert.available)
-                .map((dessert) => (
-                    <div
-                    key={dessert.id}
-                    className={`rounded-xl border p-5 transition-all duration-300 ${
-                        dessert.featured
-                        ? "border-brand-orange bg-brand-orange/5 shadow-lg"
-                        : "border-border-subtle bg-bg-surface"
-                    }`}
-                    >
-                    <h4 className="text-lg font-semibold text-text-primary">
-                        {dessert.name}
-                    </h4>
-
-                    {dessert.description && (
-                        <p className="mt-1 text-sm text-text-muted">
-                        {dessert.description}
-                        </p>
-                    )}
-                    </div>
-                ))}
-            </div>
-            </section>
-
+        <MenuSection
+            id="desserts"
+            eyebrow="Para finalizar"
+            title="Sobremesas"
+            description="Um toque especial para encerrar a experiência."
+              images={[
+                    {
+                    src: pineappleImage,
+                    alt: "Abacaxi La Bratche",
+                    },
+                    {
+                    src: bananaImage,
+                    alt: "Banana assada",
+                    },
+                ]}
+            items={experience.details.desserts} 
+        />
 
         <section id="sample-menus" aria-labelledby="sample-menus-title" className="mt-20">
             <div className="text-center">
@@ -268,7 +177,7 @@ export default function ExperienceDetails({ experience }) {
                 </div>
                 ))}
             </div>
-            </section>
+        </section>
 
     </div>
   )
