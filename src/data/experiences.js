@@ -17,7 +17,7 @@ export const experiences = [
       serviceOptions: {
         complete: {
           id: "complete",
-          title: "Churrasco completo com assador",
+          title: "Serviço Completo",
           featured: true,
           available: true,
           description:

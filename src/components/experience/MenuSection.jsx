@@ -59,6 +59,12 @@ export default function MenuSection({
                     <h4 className="font-display text-2xl font-normal text-white">
                       {item?.name}
                     </h4>
+
+                      {item?.description && (
+                      <p className="mt-2 max-w-xl text-sm leading-relaxed text-white/90">
+                        {item.description}
+                      </p>
+                    )}
                   </div>
                 </div>
               );
