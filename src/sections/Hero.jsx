@@ -15,13 +15,13 @@ export default function Hero() {
             <img
                 src={heroImage2}
                 alt="Churrasco preparado na brasa"
-                className="absolute inset-0 h-full w-full object-cover object-[80%_center] sm:object-center"
+                className="absolute inset-0 h-full w-full object-cover object-[75%_center] sm:object-center"
             />
 
             <div className="absolute inset-0 bg-bg-primary/70"/>
 
             <Container>
-                <div className="relative max-w-3xl">
+                <div className="relative max-w-3xl translate-y-10 sm:translate-y-0">
 
                     <AwardsBadge awards={awards} />
 
