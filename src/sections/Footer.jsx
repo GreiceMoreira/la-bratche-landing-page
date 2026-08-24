@@ -5,7 +5,7 @@ import {
     FaEnvelope,
 } from "react-icons/fa"
 
-import LaBratche from "../assets/images/LaBratche.png"
+import LaBratche from "../assets/images/logo-preto.jpg"
 
 export default function Footer() {
   return (
@@ -22,7 +22,7 @@ export default function Footer() {
               className="mx-auto h-16 w-auto md:mx-0"
             />
 
-            <p className="mt-3 text-sm text-text-muted">
+            <p className="mt-3 text-sm leading-relaxed text-text-muted">
               Churrasco, fogo e experiências.
             </p>
             </div>
@@ -51,7 +51,7 @@ export default function Footer() {
             {/* Redes sociais */}
 
             <div className="flex flex-col items-center">
-            <p className="mb-3 text-sm text-text-muted">
+            <p className="mb-3 text-xs font-medium uppercase tracking-[0.2em] text-text-muted">
                 Siga a La Bratche
             </p>
 
@@ -78,7 +78,7 @@ export default function Footer() {
             </div>
             </div>
         </div>
-        
+
         {/* Copyright */}
         <div className="mt-10 border-t border-border-subtle pt-6 text-center text-sm text-text-muted">
           © 2026 La Bratche. Todos os direitos reservados.

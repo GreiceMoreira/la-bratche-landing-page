@@ -1,11 +1,19 @@
-import galleryImage1 from "../assets/images/gallery/image-1.jpeg";
+import galleryImage1 from "../assets/images/meats/11.jpg";
 import galleryImage2 from "../assets/images/meats/meats.jpg";
 import galleryImage3 from "../assets/images/sides/sides.jpg";
 import galleryImage4 from "../assets/images/desserts/banana.jpg";
 import galleryImage5 from "../assets/images/desserts/abacaxi.jpg";
-// import galleryImage6 from "../assets/images/gallery/image-6.jpg";
-// import galleryImage7 from "../assets/images/gallery/image-7.jpg";
-// import galleryImage8 from "../assets/images/gallery/image-8.jpg";
+import galleryImage6 from "../assets/images/gallery/3.jpg";
+import galleryImage7 from "../assets/images/gallery/5.jpg";
+import galleryImage8 from "../assets/images/gallery/14.jpg";
+import galleryImage9 from "../assets/images/meats/4.jpg";
+import galleryImage10 from "../assets/images/meats/6.jpg";
+import galleryImage11 from "../assets/images/meats/9.jpg";
+import galleryImage12 from "../assets/images/meats/10.jpg";
+import galleryImage13 from "../assets/images/meats/12.jpg";
+import galleryImage14 from "../assets/images/sides/7.jpg";
+import galleryImage15 from "../assets/images/sides/8.jpg";
+import galleryImage16 from "../assets/images/meats/11.jpg";
 import LaBratche from "../assets/images/LaBratche.png";
 import Test from "../assets/images/Test.jpg";
 
@@ -37,57 +45,57 @@ export const galleryImages = [
   },
   {
     id: "gallery-6",
-    src: LaBratche,
+    src: galleryImage6,
     alt: "Preparação do churrasco",
   },
   {
     id: "gallery-7",
-    src: LaBratche,
+    src: galleryImage7,
     alt: "Mesa com churrasco La Bratche",
   },
   {
     id: "gallery-8",
-    src: LaBratche,
+    src: galleryImage8,
     alt: "Experiência gastronômica La Bratche",
   },
     {
     id: "gallery-9",
-    src: Test,
+    src: galleryImage9,
     alt: "Experiência gastronômica La Bratche",
   },
       {
     id: "gallery-10",
-    src: Test,
+    src: galleryImage10,
     alt: "Experiência gastronômica La Bratche",
   },
       {
     id: "gallery-11",
-    src: Test,
+    src: galleryImage11,
     alt: "Experiência gastronômica La Bratche",
   },
       {
     id: "gallery-12",
-    src: Test,
+    src: galleryImage12,
     alt: "Experiência gastronômica La Bratche",
   },
       {
     id: "gallery-13",
-    src: Test,
+    src: galleryImage13,
     alt: "Experiência gastronômica La Bratche",
   },
       {
     id: "gallery-14",
-    src: Test,
+    src: galleryImage14,
     alt: "Experiência gastronômica La Bratche",
   },
       {
     id: "gallery-15",
-    src: Test,
+    src: galleryImage15,
     alt: "Experiência gastronômica La Bratche",
   },
       {
     id: "gallery-16",
-    src: Test,
+    src: galleryImage16,
     alt: "Experiência gastronômica La Bratche",
   },
 ];

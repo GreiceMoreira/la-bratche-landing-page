@@ -20,11 +20,12 @@ export default function ExperienceDetails({ experience }) {
         <section id="service-options" aria-labelledby="service-options-title">
             <div className="mt-16">
                 <div className="mb-8 text-center">
-                    <p className="text-sm font-semibold uppercase tracking-[0.2em] text-brand-orange">
+                    <p className="text-xs font-medium uppercase tracking-[0.25em] text-brand-orange">
                     Escolha a experiência
                     </p>
 
-                    <h3 id="service-options-title" className="mt-2 text-3xl font-semibold text-text-primary">
+                    <h3 id="service-options-title"
+                        className="mt-2 font-display text-4xl font-normal tracking-wide text-text-primary sm:text-5xl">
                     Duas formas de viver o seu churrasco
                     </h3>
                 </div>
@@ -45,11 +46,11 @@ export default function ExperienceDetails({ experience }) {
                         </span>
                         )}
 
-                        <h4 className="text-2xl font-semibold text-text-primary">
+                        <h4 className="font-display text-2xl font-normal text-text-primary">
                         {service.title}
                         </h4>
 
-                        <p className="mt-4 leading-relaxed text-text-muted">
+                        <p className="mt-4 text-base leading-relaxed text-text-muted">
                         {service.description}
                         </p>
 
@@ -57,7 +58,7 @@ export default function ExperienceDetails({ experience }) {
                         {service.features.map((feature) => (
                             <li
                             key={feature}
-                            className="flex items-start gap-3 text-text-primary"
+                            className="flex items-start gap-3 text-sm text-text-primary sm:text-base"
                             >
                             <span className="mt-1 text-brand-orange ">✓</span>
                             <span>{feature}</span>
@@ -99,7 +100,8 @@ export default function ExperienceDetails({ experience }) {
             eyebrow="Para finalizar"
             title="Sobremesas"
             description="Um toque especial para encerrar a experiência."
-              images={[
+            variant="desserts"
+            images={[
                     {
                     src: pineappleImage,
                     alt: "Abacaxi La Bratche",
@@ -114,13 +116,13 @@ export default function ExperienceDetails({ experience }) {
 
         <section id="sample-menus" aria-labelledby="sample-menus-title" className="mt-20">
             <div className="text-center">
-                <p className="text-sm font-semibold uppercase tracking-[0.2em] text-brand-orange">
+                <p className="text-xs font-medium uppercase tracking-[0.25em] text-brand-orange">
                 Nossas sugestões
                 </p>
 
                 <h3
                 id="sample-menus-title"
-                className="mt-2 text-3xl font-semibold text-text-primary"
+                className="mt-2 font-display text-4xl font-normal tracking-wide text-text-primary sm:text-5xl"
                 >
                 Exemplos de cardápio
                 </h3>
@@ -137,12 +139,12 @@ export default function ExperienceDetails({ experience }) {
                     key={menu.id}
                     className="flex flex-col rounded-2xl border border-border-subtle bg-bg-surface p-6 transition-all duration-300 hover:-translate-y-1 hover:border-brand-orange/60"
                 >
-                    <h4 className="text-2xl font-semibold text-text-primary">
+                    <h4 className="font-display text-2xl font-normal text-text-primary">
                     {menu.name}
                     </h4>
 
                     <div className="mt-4 flex items-baseline gap-1">
-                        <span className="text-3xl font-bold text-brand-orange">
+                        <span className="font-display text-3xl font-normal text-brand-orange">
                         ${menu.pricePerPerson}
                         </span>
 

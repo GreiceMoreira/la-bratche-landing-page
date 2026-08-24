@@ -61,20 +61,20 @@ export default function Gallery() {
 
     return (
         <section
-        id="gallery"
-        aria-labelledby="gallery-title"
-        className="mt-20"
+            id="gallery"
+            aria-labelledby="gallery-title"
+            className="mt-20"
         >
         <div className="mx-auto w-full max-w-7xl px-6 lg:px-8">
 
             <div className="text-center">
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-brand-orange">
+            <p className="text-xs font-medium uppercase tracking-[0.25em] text-brand-orange">
                 La Bratche
             </p>
 
             <h2
                 id="gallery-title"
-                className="mt-2 text-3xl font-semibold text-text-primary"
+                className="mt-2 font-display text-4xl font-normal tracking-wide text-text-primary sm:text-5xl"
             >
                 Momentos à mesa
             </h2>
