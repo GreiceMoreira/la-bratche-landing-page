@@ -149,7 +149,9 @@ export default function MenuSection({
 
                       {/* Category items */}
                       <div className="mt-5 space-y-4">
-                        {items.map((item) => (
+                        {[...items]
+                            .sort((a, b) => a.name.localeCompare(b.name, "pt-BR"))
+                            .map((item) => (
                           <div
                             key={item.id}
                             className="border-b border-border-subtle pb-4"
@@ -225,7 +227,9 @@ export default function MenuSection({
 
                           {/* Category items */}
                           <div className="mt-5 space-y-4">
-                            {group.items.map((item) => (
+                            {[...group.items]
+                                .sort((a, b) => a.name.localeCompare(b.name, "pt-BR"))
+                                .map((item) => (
                               <div
                                 key={item.id}
                                 className="border-b border-border-subtle pb-4"
