@@ -49,67 +49,175 @@ export const experiences = [
       },
 
       meats: [
-          // carnes
-          {         
-            id:"entrecot",
-            name: "Entrecot",
-            description: " Um dos cortes protagonistas do churrasco",
-            featured: true,
-            available: true,
-          },
-          {
-            id:"assado-de-tira",
-            name: "Assado de tira",
-            description: "Angus",
-            featured: false,
-            available: true,
-          },
-          {         
-            id:"matambrito-suino",
-            name: "Matambrito suíno",
-            featured: false,
-            available: true,
-          },
-          {
-            id:"file-coxa-sobrecoxa",
-            name: "Filé de coxa e sobrecoxa",
-            featured: false,
-            available: true,
-          },
-          {        
-            id:"treccia-di-manzo", 
-            name: "Treccia di manzo",
-            description: "Entranha trançada com bacon",
-            featured: false,
-            available: true,
-          },
-          {
-            id:"costelinha-de-porco",
-            name: "Costelinha de porco",
-            featured: false,
-            available: true,
-          },
-          {         
-            id:"vazio",
-            name: "Vazio",
-            featured: false,
-            available: true,
-          },
-          {         
-            id:"paleta-atlatida",
-            name: "Paleta Atlântida",
-            description: "Prêmio 2026",
-            featured: true,
-            available: true,
-          },
-          {         
-            id:"picanha",
-            name: "Picanha",
-            featured: false,
-            available: true,
-          },
-   
-      ],
+      // FRANGO
+      {
+        id: "file-coxa-sobrecoxa",
+        name: "Filé de coxa e sobrecoxa",
+        category: "chicken",
+        featured: false,
+        available: true,
+      },
+
+      // GADO
+      {
+        id: "entrecot",
+        name: "Entrecot",
+        description: "Um dos cortes protagonistas do churrasco",
+        category: "beef",
+        featured: true,
+        available: true,
+      },
+      {
+        id: "treccia-di-manzo",
+        name: "Treccia di manzo",
+        description: "Entranha trançada com bacon",
+        category: "beef",
+        featured: false,
+        available: true,
+      },
+      {
+        id: "vazio",
+        name: "Vazio",
+        category: "beef",
+        featured: false,
+        available: true,
+      },
+      {
+        id: "paleta-atlantida",
+        name: "Paleta Atlântida",
+        description: "Prêmio 2026",
+        category: "beef",
+        featured: true,
+        available: true,
+      },
+
+      // PORCO
+      {
+        id: "matambrito-suino",
+        name: "Matambrito suíno",
+        category: "pork",
+        featured: false,
+        available: true,
+      },
+      {
+        id: "costelinha-de-porco",
+        name: "Costelinha de porco",
+        category: "pork",
+        featured: false,
+        available: true,
+      },
+
+      // ANGUS — MENU ESPECIAL
+      {
+        id: "picanha-angus",
+        name: "Picanha",
+        category: "angus",
+        featured: false,
+        available: true,
+      },
+      {
+        id: "assado-de-tira-angus",
+        name: "Assado de tiras",
+        category: "angus",
+        featured: false,
+        available: true,
+      },
+      {
+        id: "t-bone",
+        name: "T-Bone",
+        category: "angus",
+        featured: false,
+        available: true,
+      },
+      {
+        id: "tomahawk",
+        name: "Tomahawk",
+        category: "angus",
+        featured: false,
+        available: true,
+      },
+      {
+        id: "denver-steak",
+        name: "Denver Steak",
+        category: "angus",
+        featured: false,
+        available: true,
+      },
+      {
+        id: "prime-rib",
+        name: "Prime Rib",
+        category: "angus",
+        featured: false,
+        available: true,
+      },
+      {
+        id: "maminha-angus",
+        name: "Maminha",
+        category: "angus",
+        featured: false,
+        available: true,
+      },
+
+      // CORDEIRO — MENU ESPECIAL
+      {
+        id: "paleta-cordeiro",
+        name: "Paleta",
+        category: "lamb",
+        featured: false,
+        available: true,
+      },
+      {
+        id: "carre-frances",
+        name: "Carré Francês",
+        category: "lamb",
+        featured: false,
+        available: true,
+      },
+      {
+        id: "costela-cordeiro",
+        name: "Costela",
+        category: "lamb",
+        featured: false,
+        available: true,
+      },
+
+      // EXÓTICAS — MENU ESPECIAL
+      {
+        id: "ra",
+        name: "Rã",
+        category: "exotic",
+        featured: false,
+        available: true,
+      },
+      {
+        id: "coelho",
+        name: "Coelho",
+        category: "exotic",
+        featured: false,
+        available: true,
+      },
+      {
+        id: "pato",
+        name: "Pato",
+        category: "exotic",
+        featured: false,
+        available: true,
+      },
+      {
+        id: "avestruz",
+        name: "Avestruz",
+        category: "exotic",
+        featured: false,
+        available: true,
+      },
+      {
+        id: "jacare",
+        name: "Jacaré",
+        category: "exotic",
+        featured: false,
+        available: true,
+      },
+    ],
 
       sides: [
           // acompanhamentos
@@ -256,3 +364,35 @@ export const experiences = [
     
   },
 ]
+export const meatCategories = [
+  {
+    id: "chicken",
+    name: "Frango",
+    special: false,
+  },
+  {
+    id: "beef",
+    name: "Gado",
+    special: false,
+  },
+  {
+    id: "pork",
+    name: "Porco",
+    special: false,
+  },
+  {
+    id: "angus",
+    name: "Angus",
+    special: true,
+  },
+  {
+    id: "lamb",
+    name: "Cordeiro",
+    special: true,
+  },
+  {
+    id: "exotic",
+    name: "Experiências Exóticas",
+    special: true,
+  },
+];

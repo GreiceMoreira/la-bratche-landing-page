@@ -1,12 +1,14 @@
 
 {/* <MenuSection
     id="meats"
+    variant="meats"
     eyebrow=" Da brasa à mesa"
     title="Carnes selecionadas"
     description="Cortes selecionados e preparados na brasa para valorizar cada sabor."
     image={meatsImage}
     items={experience.details.meats}
 /> */}
+import { useState } from "react";
 
 export default function MenuSection({
   id,
@@ -18,8 +20,31 @@ export default function MenuSection({
   items,
   variant,
 }) {
-  const availableItems = items.filter((item) => item.available);
+  const availableItems = items.filter((item) => item.available)
 
+  const regularCategories = ["chicken", "beef", "pork"]
+  const specialCategories = ["angus", "lamb", "exotic"]
+
+  const groupedItems = regularCategories.map((category) => ({
+    category,
+    items: availableItems.filter((item) => item.category === category),
+  }))
+
+  const specialItems = specialCategories.map((category) => ({
+    category,
+    items: availableItems.filter((item) => item.category === category),
+  }))
+
+  const [showSpecialMenu, setShowSpecialMenu] = useState(false);
+
+  const categoryLabels = {
+    chicken: "Frango",
+    beef: "Gado",
+    pork: "Porco",
+    angus: "Angus",
+    lamb: "Cordeiro",
+    exotic: "Experiências Exóticas",
+  };    
 
   return (
     <section id={id} aria-labelledby={`${id}-title`} className="mt-20">
@@ -106,43 +131,167 @@ export default function MenuSection({
         )
       )}
 
-      {/* Menu items */}
-      {variant !== "desserts" && (
-        <div className="mt-8 grid gap-x-8 gap-y-6 sm:grid-cols-2 lg:grid-cols-3">
-          {availableItems.map((item) => (
-            <div
-              key={item.id}
-              className={
-                item.featured
-                  ? "border-l-2 border-brand-orange pl-5 sm:pl-6"
-                  : "border-b border-border-subtle pb-5"
-              }
-            >
-              {item.featured && (
-                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand-orange">
-                  Da casa
-                </p>
-              )}
+          {/* Menu items */}
+          {variant === "meats" ? (
+            <div className="mt-10 space-y-14">
 
-              <h4
-                className={
-                  item.featured
-                    ? "mt-1 font-display text-xl font-normal text-text-primary"
-                    : "text-lg font-medium text-text-primary"
-                }
-              >
-                {item.name}
-              </h4>
+              {/* Regular categories */}
+              <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
+                {groupedItems.map(({ category, items }) => {
+                  if (items.length === 0) return null
 
-              {item.description && (
-                <p className="mt-1 text-sm leading-relaxed text-text-muted">
-                  {item.description}
-                </p>
-              )}
+                  return (
+                    <div key={category}>
+                      {/* Category title */}
+                      <h4 className="border-b border-brand-orange/40 pb-3 font-display text-2xl font-normal tracking-wide text-text-primary">
+                        {categoryLabels[category]}
+                      </h4>
+
+                      {/* Category items */}
+                      <div className="mt-5 space-y-4">
+                        {items.map((item) => (
+                          <div
+                            key={item.id}
+                            className="border-b border-border-subtle pb-4"
+                          >
+                            {item.featured && (
+                              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand-orange">
+                                Da casa
+                              </p>
+                            )}
+
+                            <h5 className="mt-1 text-lg font-medium text-text-primary">
+                              {item.name}
+                            </h5>
+
+                            {item.description && (
+                              <p className="mt-1 text-sm leading-relaxed text-text-muted">
+                                {item.description}
+                              </p>
+                            )}
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )
+                })}
+              </div>
+
+              {/* Special menu */}
+              <div className="border-t border-border-subtle pt-10">
+                <div className="text-center">
+                  <p className="text-sm font-semibold uppercase tracking-[0.2em] text-brand-orange">
+                    Menu especial
+                  </p>
+
+                  <h4 className="mt-2 font-display text-3xl font-normal text-text-primary">
+                    Cortes especiais
+                  </h4>
+
+                  <button
+                    type="button"
+                    onClick={() => setShowSpecialMenu((current) => !current)}
+                    aria-expanded={showSpecialMenu}
+                    aria-controls={`${id}-special-menu`}
+                    className="mt-6 inline-flex items-center gap-2 rounded-full border border-brand-orange px-6 py-3 text-sm font-semibold uppercase tracking-[0.15em] text-brand-orange transition-all duration-300 hover:bg-brand-orange hover:text-white"
+                  >
+                    {showSpecialMenu ? "Ocultar menu" : "Conheça o menu"}
+
+                    <span
+                      aria-hidden="true"
+                      className={`transition-transform duration-300 ${
+                        showSpecialMenu ? "rotate-90" : ""
+                      }`}
+                    >
+                      →
+                    </span>
+                  </button>
+                </div>
+
+                {/* Special categories */}
+                {showSpecialMenu && (
+                  <div
+                    id={`${id}-special-menu`}
+                    className="mt-10 grid gap-10 border-t border-border-subtle pt-10 sm:grid-cols-2 lg:grid-cols-3"
+                  >
+                    {specialItems
+                      .filter((group) => group.items.length > 0)
+                      .map((group) => (
+                        <div key={group.category}>
+                          {/* Category title */}
+                          <h4 className="border-b border-brand-orange/40 pb-3 font-display text-2xl font-normal tracking-wide text-text-primary">
+                            {categoryLabels[group.category]}
+                          </h4>
+
+                          {/* Category items */}
+                          <div className="mt-5 space-y-4">
+                            {group.items.map((item) => (
+                              <div
+                                key={item.id}
+                                className="border-b border-border-subtle pb-4"
+                              >
+                                {item.featured && (
+                                  <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand-orange">
+                                    Da casa
+                                  </p>
+                                )}
+
+                                <h5 className="mt-1 text-lg font-medium text-text-primary">
+                                  {item.name}
+                                </h5>
+
+                                {item.description && (
+                                  <p className="mt-1 text-sm leading-relaxed text-text-muted">
+                                    {item.description}
+                                  </p>
+                                )}
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      ))}
+                  </div>
+                )}
+              </div>
             </div>
-          ))}
-        </div>
-      )}
+          ) : (
+          variant !== "desserts" && (
+            <div className="mt-8 grid gap-x-8 gap-y-6 sm:grid-cols-2 lg:grid-cols-3">
+              {availableItems.map((item) => (
+                <div
+                  key={item.id}
+                  className={
+                    item.featured
+                      ? "border-l-2 border-brand-orange pl-5 sm:pl-6"
+                      : "border-b border-border-subtle pb-5"
+                  }
+                >
+                  {item.featured && (
+                    <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand-orange">
+                      Da casa
+                    </p>
+                  )}
+
+                  <h4
+                    className={
+                      item.featured
+                        ? "mt-1 font-display text-xl font-normal text-text-primary"
+                        : "text-lg font-medium text-text-primary"
+                    }
+                  >
+                    {item.name}
+                  </h4>
+
+                  {item.description && (
+                    <p className="mt-1 text-sm leading-relaxed text-text-muted">
+                      {item.description}
+                    </p>
+                  )}
+                </div>
+              ))}
+            </div>
+          )
+        )}
     </section>
   );
 }
