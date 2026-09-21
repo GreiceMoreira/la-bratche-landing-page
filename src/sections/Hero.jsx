@@ -4,6 +4,7 @@ import Section from "../components/Section";
 import heroImage from "../assets/images/chico-churrasco.png"
 import heroImage2 from "../assets/images/chico-churrasqueira.jpg"
 import heroImage3 from "../assets/images/chico-churrasqueira2.jpg"
+import heroImage4 from "../assets/images/chico-churrasco-hero.png"
 import AwardsBadge from "../components/AwardsBadge";
 import { awards } from "../data/awards"
 
@@ -15,10 +16,11 @@ export default function Hero() {
 
     return (
         <Section className="relative min-h-screen overflow-hidden flex items-center">
+
             <img
-                src={heroImage3}
+                src={heroImage4}
                 alt="Churrasco preparado na brasa"
-                className="absolute inset-0 h-full w-full object-cover object-[75%_center] sm:object-center"
+                className="absolute inset-0 h-full w-full object-cover object-[75%_center] lg:object-[100%_center]"
             />
 
             <div className="absolute inset-0 bg-bg-primary/70"/>

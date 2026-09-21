@@ -144,6 +144,7 @@ export default function ExperienceDetails({ experience }) {
                     {menu.name}
                     </h4>
 
+                    {menu.pricePerPerson && (
                     <div className="mt-4 flex items-baseline gap-1">
                         <span className="font-display text-3xl font-normal text-brand-orange">
                         ${menu.pricePerPerson}
@@ -153,6 +154,7 @@ export default function ExperienceDetails({ experience }) {
                         / pessoa
                         </span>
                     </div>
+                    )}
 
                     <p className="mt-1 text-sm text-text-muted">
                     Mínimo de {menu.minGuests} pessoas

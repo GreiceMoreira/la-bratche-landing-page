@@ -294,7 +294,7 @@ export const experiences = [
         {
           id: "tradicional",
           name: "Tradicional",
-          pricePerPerson: 65,
+          pricePerPerson: "",
           minGuests: 20,
           items: [
             "pao-la-bratche",
@@ -308,7 +308,7 @@ export const experiences = [
         {
           id: "sabores-do-campo",
           name: "Sabores do Campo",
-          pricePerPerson: 75,
+          pricePerPerson: "",
           minGuests: 20,
           items: [
             "pao-la-bratche",
@@ -322,7 +322,7 @@ export const experiences = [
         {
           id: "assados-especiais",
           name: "Assados Especiais",
-          pricePerPerson: 90,
+          pricePerPerson: "",
           minGuests: 20,
           items: [
             "pao-la-bratche",
