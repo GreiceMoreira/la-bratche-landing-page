@@ -82,14 +82,6 @@ export const experiences = [
         featured: false,
         available: true,
       },
-      {
-        id: "paleta-atlantida",
-        name: "Paleta Atlântida",
-        description: "Prêmio 2026",
-        category: "beef",
-        featured: true,
-        available: true,
-      },
 
       // PORCO
       {
@@ -159,6 +151,14 @@ export const experiences = [
       },
 
       // CORDEIRO — MENU ESPECIAL
+      {
+        id: "paleta-atlantida",
+        name: "Paleta Atlântida",
+        description: "Prêmio 2026",
+        category: "lamb",
+        featured: true,
+        available: true,
+      },
       {
         id: "paleta-cordeiro",
         name: "Paleta",
