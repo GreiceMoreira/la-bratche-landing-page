@@ -105,7 +105,7 @@ export const experiences = [
         id: "entrecot-angus",
         name: "Entrecot Angus",
         description: "Um dos cortes protagonistas do churrasco",
-        category: "beef",
+        category: "angus",
         featured: true,
         available: true,
       },
