@@ -70,51 +70,7 @@ export default function ExperienceDetails({ experience }) {
                 </div>
             </div>
         </section>
-        
-        <MenuSection
-            id="meats"
-            variant="meats"
-            eyebrow="Da brasa à mesa"
-            title="Carnes selecionadas"
-            description="Cortes selecionados e preparados na brasa para valorizar cada sabor."
-            image={{
-                src: meatsImage,
-                alt: "Carnes sendo preparadas na brasa",
-            }}
-            items={experience.details.meats} 
-        />
-
-        <MenuSection
-            id="sides"
-            eyebrow="Para acompanhar"
-            title="Acompanhamentos"
-            description="Sabores pensados para acompanhar as carnes e completar a experiência."
-            image= {{
-                src: sidesImage,
-                alt: "Cebola, pimentão e pão LaBratche",
-            }}
-            items={experience.details.sides} 
-        />
-
-        <MenuSection
-            id="desserts"
-            eyebrow="Para finalizar"
-            title="Sobremesas"
-            description="Um toque especial para encerrar a experiência."
-            variant="desserts"
-            images={[
-                    {
-                    src: pineappleImage,
-                    alt: "Abacaxi La Bratche",
-                    },
-                    {
-                    src: bananaImage,
-                    alt: "Banana assada",
-                    },
-                ]}
-            items={experience.details.desserts} 
-        />
-
+        {/* Exemplos de cardápio */}
         <section id="sample-menus" aria-labelledby="sample-menus-title" className="mt-20">
             <div className="text-center">
                 <p className="text-xs font-medium uppercase tracking-[0.25em] text-brand-orange">
@@ -183,6 +139,51 @@ export default function ExperienceDetails({ experience }) {
                 ))}
             </div>
         </section>
+                
+        <MenuSection
+            id="meats"
+            variant="meats"
+            eyebrow="Da brasa à mesa"
+            title="Carnes selecionadas"
+            description="Cortes selecionados e preparados na brasa para valorizar cada sabor."
+            image={{
+                src: meatsImage,
+                alt: "Carnes sendo preparadas na brasa",
+            }}
+            items={experience.details.meats} 
+        />
+
+        <MenuSection
+            id="sides"
+            eyebrow="Para acompanhar"
+            title="Acompanhamentos"
+            description="Sabores pensados para acompanhar as carnes e completar a experiência."
+            image= {{
+                src: sidesImage,
+                alt: "Cebola, pimentão e pão LaBratche",
+            }}
+            items={experience.details.sides} 
+        />
+
+        <MenuSection
+            id="desserts"
+            eyebrow="Para finalizar"
+            title="Sobremesas"
+            description="Um toque especial para encerrar a experiência."
+            variant="desserts"
+            images={[
+                    {
+                    src: pineappleImage,
+                    alt: "Abacaxi La Bratche",
+                    },
+                    {
+                    src: bananaImage,
+                    alt: "Banana assada",
+                    },
+                ]}
+            items={experience.details.desserts} 
+        />
+
 
     </div>
   )

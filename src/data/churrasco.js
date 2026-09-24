@@ -1,10 +1,4 @@
-import {GiBarbecue, GiHamburger} from "react-icons/gi";
-import { MdOutlineKebabDining } from "react-icons/md";
-import laBratcheImage from "../assets/images/LaBratche.png";
-
-
-export const experiences = [
-// CHURRASCO
+export const churrasco = [
   {
     id: "churrasco",
     active: true,
@@ -102,16 +96,8 @@ export const experiences = [
 
       // ANGUS — MENU ESPECIAL
       {
-        id: "entrecot-angus",
-        name: "Entrecot Angus",
-        description: "Um dos cortes protagonistas do churrasco",
-        category: "beef",
-        featured: true,
-        available: true,
-      },
-      {
         id: "picanha-angus",
-        name: "Picanha Angus",
+        name: "Picanha",
         category: "angus",
         featured: false,
         available: true,
@@ -153,7 +139,7 @@ export const experiences = [
       },
       {
         id: "maminha-angus",
-        name: "Maminha Angus",
+        name: "Maminha",
         category: "angus",
         featured: false,
         available: true,
@@ -303,7 +289,7 @@ export const experiences = [
         {
           id: "tradicional",
           name: "Tradicional",
-          pricePerPerson: "75",
+          pricePerPerson: "",
           minGuests: 20,
           items: [
             "pao-la-bratche",
@@ -317,7 +303,7 @@ export const experiences = [
         {
           id: "sabores-do-campo",
           name: "Sabores do Campo",
-          pricePerPerson: "90",
+          pricePerPerson: "",
           minGuests: 20,
           items: [
             "pao-la-bratche",
@@ -331,14 +317,14 @@ export const experiences = [
         {
           id: "assados-especiais",
           name: "Assados Especiais",
-          pricePerPerson: "130",
+          pricePerPerson: "",
           minGuests: 20,
           items: [
             "pao-la-bratche",
             "linguica-artesanal",
             "queijos",
-            "entrecot-angus",
-            "picanha-angus",
+            "entrecot",
+            "picanha",
             "treccia-di-manzo",
             "salada-batata-mix-salada",
           ],
@@ -352,175 +338,16 @@ export const experiences = [
 
     
   },
-// HAMBURGUER
   {
     id: "hamburguer",
-      active: false,
+    active: false,
 
-      title: "Burger Experience",
-      icon: GiHamburger,
-      image: laBratcheImage,
-
-      description:
-        "Hambúrgueres artesanais feitos na hora em uma estação completa com ingredientes frescos e de qualidade",
-
-      details: {
-        serviceOptions: {
-          assisted: {
-            id: "assisted",
-            title: "Serviço com Montagem Assistida",
-            featured: true,
-            available: true,
-
-            description:
-              "Nossa equipe prepara e monta os hambúrgueres conforme combinações previamente definidas.",
-
-            features: [
-              "Ingredientes selecionados antecipadamente",
-              "Execução padronizada",
-              "Ajustes individuais em caso de restrições alimentares",
-            ],
-          },
-
-          buffet: {
-            id: "buffet",
-            title: "Estação Buffet de Hambúrguer",
-            featured: false,
-            available: true,
-
-            description:
-              "Montamos uma estação estruturada com ingredientes previamente escolhidos pelo cliente.",
-
-            features: [
-              "As carnes são preparadas na churrasqueira, com queijo derretido na finalização",
-              "Os convidados montam seus próprios hambúrgueres",
-              "Serviço contínuo e organizado",
-            ],
-          },
-        },
-
-        breads: [
-          // 2 opções
-            {
-              id: "pao-brioche",
-              name: "Pão brioche",
-              featured: false,
-              available: true,
-            },
-            {
-              id: "pao-australiano",
-              name: "Pão australiano",
-              featured: false,
-              available: true,
-            },
-        ],
-
-        meats: [
-            // GADO
-            {
-              id: "paleta-bovina",
-              name: "Paleta bovina",
-              category: "beef",
-              featured: false,
-              available: true,
-            },
-            {
-              id: "costela-bovina",
-              name: "Costela bovina",
-              category: "beef",
-              featured: false,
-              available: true,
-            },
-            // PORCO
-            {
-              id: "copa-lombo",
-              name: "Copa Lombo",
-              category: "pork",
-              featured: false,
-              available: true,
-            },
-            // CORDEIRO
-            {
-              id: "cordeiro",
-              name: "Cordeiro",
-              category: "lamb",
-              featured: false,
-              available: true,
-            },            
-          ],
-
-        ingredients: [
-            {
-              id: "alface",
-              name: "Alface",
-              category: "salad",
-              featured: false,
-              available: true,
-            },      
-             {
-              id: "tomate",
-              name: "Tomate",
-              category: "salad",
-              featured: false,
-              available: true,
-            },       
-            {
-              id: "queijo-mussarela",
-              name: "Queijo mussarela",
-              category: "cheese",
-              featured: false,
-              available: true,
-            },                 
-            {
-              id: "queijo-cheddar",
-              name: "Queijo cheddar",
-              category: "cheese",
-              featured: false,
-              available: true,
-            },                   
-            {
-              id: "cebola-caramelizada",
-              name: "Cebola caramelizada",
-              category: "salad",
-              featured: false,
-              available: true,
-            },         
-            {
-              id: "bacon",
-              name: "Bacon",
-              featured: false,
-              available: true,
-            },       
-            {
-              id: "picles",
-              name: "Picles",
-              category: "salad",
-              featured: false,
-              available: true,
-            },                           
-          ],
-
-        optionalItems: [
-          {
-            id: "batatas-fritas",
-            name: "Batatas fritas",
-            description:
-              "Preparadas na hora em fritadeira profissional de balcão",
-            featured: false,
-            available: true,
-          },
-        ],
-
-        minGuests: 15,
-
-        pricePerPerson: 60,
-
-        priceNote: "a partir de 20 pessoas",
-
-        images: [],
-      },
+    title: "Burger Experience",
+    icon: GiHamburger,
+    image: laBratcheImage,
+    description: "Hambúrgeres artesanais feitos na hora em uma estação completacom ingredientes frescos e de qualidade",
+    
   },
-// ESPETINHO
   {
     id: "espetinhos",
     active: false,
