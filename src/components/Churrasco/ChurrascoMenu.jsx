@@ -81,12 +81,12 @@ export default function ChurrascoMenu({ details }) {
             className="h-[320px] w-full object-cover object-[70%_center] transition-transform duration-700 hover:scale-105 sm:h-[450px]"
           />
 
-          <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent px-6 pb-6 pt-16 sm:px-8 sm:pb-8">
-            <p className="max-w-2xl text-sm leading-relaxed text-white/90 sm:text-base">
-              Cortes selecionados e preparados na brasa para valorizar cada
-              sabor.
-            </p>
-          </div>
+        <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/90 via-black/55 to-transparent px-6 pb-7 pt-24 sm:px-8 sm:pb-9">
+        <p className="max-w-2xl text-sm leading-relaxed text-white drop-shadow-lg sm:text-base">
+            Cortes selecionados e preparados na brasa para valorizar cada
+            sabor.
+        </p>
+        </div>
         </div>
 
         <div className="mt-10 space-y-14">
@@ -180,15 +180,15 @@ export default function ChurrascoMenu({ details }) {
       <section id="sides" aria-labelledby="sides-title" className="mt-20">
         <div className="text-center">
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-brand-orange">
-            Para acompanhar
+            Além das carnes
           </p>
 
-          <h3
-            id="sides-title"
-            className="mt-2 font-display text-4xl font-semibold tracking-wide text-text-primary sm:text-5xl"
-          >
-            Acompanhamentos
-          </h3>
+        <h3
+        id="sides-title"
+        className="mt-2 px-2 font-display text-3xl font-semibold tracking-normal text-text-primary sm:text-5xl"
+        >
+        Acompanhamentos
+        </h3>
         </div>
 
         <div className="relative mt-14 overflow-hidden rounded-2xl">
@@ -198,12 +198,11 @@ export default function ChurrascoMenu({ details }) {
             className="h-[320px] w-full object-cover transition-transform duration-700 hover:scale-105 sm:h-[450px]"
           />
 
-          <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent px-6 pb-6 pt-16 sm:px-8 sm:pb-8">
-            <p className="max-w-2xl text-sm leading-relaxed text-white/90 sm:text-base">
-              Sabores pensados para acompanhar as carnes e completar a
-              experiência.
-            </p>
-          </div>
+        <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/90 via-black/55 to-transparent px-6 pb-7 pt-24 sm:px-8 sm:pb-9">
+        <p className="max-w-2xl text-sm leading-relaxed text-white drop-shadow-lg sm:text-base">
+            Pães, vegetais e outros sabores preparados para deixar a experiência ainda mais completa.
+        </p>
+        </div>
         </div>
 
         <div className="mt-8 grid gap-x-8 gap-y-6 sm:grid-cols-2 lg:grid-cols-3">

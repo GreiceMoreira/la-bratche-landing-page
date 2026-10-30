@@ -73,7 +73,23 @@ export default function HamburguerMenu({ details }) {
 
         {/* Breads */}
         {breads.length > 0 && (
-          <MenuGroup title="Pães" items={breads} />
+          <div>
+            <div className="mb-8">
+                <p className="text-sm font-semibold uppercase tracking-[0.2em] text-brand-orange">
+                A base do seu hambúrguer
+                </p>
+
+                <h4 className="mt-2 font-display text-3xl font-normal text-text-primary">
+                Escolha seu pão
+                </h4>
+            </div>
+
+            <div className="grid gap-x-8 gap-y-6 sm:grid-cols-2 lg:grid-cols-3">
+                {breads.map((item) => (
+                <MenuItem key={item.id} item={item} />
+                ))}
+            </div>
+        </div>
         )}
 
         {/* Meats */}
@@ -101,13 +117,13 @@ export default function HamburguerMenu({ details }) {
         {ingredients.length > 0 && (
           <div>
             <div className="mb-8">
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-brand-orange">
+                <p className="text-sm font-semibold uppercase tracking-[0.2em] text-brand-orange">
                 Para complementar
-              </p>
+                </p>
 
-              <h4 className="mt-2 font-display text-3xl font-normal text-text-primary">
-                Ingredientes e acompanhamentos
-              </h4>
+                <h4 className="mt-2 font-display text-3xl font-normal text-text-primary">
+                Ingredientes e combinações
+                </h4>
             </div>
 
             <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
@@ -120,23 +136,23 @@ export default function HamburguerMenu({ details }) {
 
         {/* Optional items */}
         {optionalItems.length > 0 && (
-          <div className="border-t border-border-subtle pt-10">
-            <div className="mb-8 text-center">
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-brand-orange">
-                Para deixar ainda melhor
-              </p>
+        <div className="border-t border-border-subtle pt-10">
+            <div className="mb-8">
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-brand-orange">
+                Um toque a mais
+            </p>
 
-              <h4 className="mt-2 font-display text-3xl font-normal text-text-primary">
-                Acompanhamentos opcionais
-              </h4>
+            <h4 className="mt-2 font-display text-3xl font-normal text-text-primary">
+                Adicionais
+            </h4>
             </div>
 
             <div className="grid gap-x-8 gap-y-6 sm:grid-cols-2 lg:grid-cols-3">
-              {optionalItems.map((item) => (
+            {optionalItems.map((item) => (
                 <MenuItem key={item.id} item={item} />
-              ))}
+            ))}
             </div>
-          </div>
+        </div>
         )}
 
       </div>
