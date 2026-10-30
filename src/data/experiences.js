@@ -99,6 +99,13 @@ export const experiences = [
         featured: false,
         available: true,
       },
+      {
+        id: "assado-de-tira",
+        name: "Assado de tiras",
+        category: "angus",
+        featured: false,
+        available: true,
+      },
 
       // ANGUS — MENU ESPECIAL
       {
@@ -118,7 +125,7 @@ export const experiences = [
       },
       {
         id: "assado-de-tira-angus",
-        name: "Assado de tiras",
+        name: "Assado de tiras angus",
         category: "angus",
         featured: false,
         available: true,
@@ -352,185 +359,7 @@ export const experiences = [
 
     
   },
-// HAMBURGUER
-  {
-    id: "hamburguer",
-      active: false,
 
-      title: "Burger Experience",
-      icon: GiHamburger,
-      image: laBratcheImage,
-
-      description:
-        "Hambúrgueres artesanais feitos na hora em uma estação completa com ingredientes frescos e de qualidade",
-
-      details: {
-        serviceOptions: {
-          assisted: {
-            id: "assisted",
-            title: "Serviço com Montagem Assistida",
-            featured: true,
-            available: true,
-
-            description:
-              "Nossa equipe prepara e monta os hambúrgueres conforme combinações previamente definidas.",
-
-            features: [
-              "Ingredientes selecionados antecipadamente",
-              "Execução padronizada",
-              "Ajustes individuais em caso de restrições alimentares",
-            ],
-          },
-
-          buffet: {
-            id: "buffet",
-            title: "Estação Buffet de Hambúrguer",
-            featured: false,
-            available: true,
-
-            description:
-              "Montamos uma estação estruturada com ingredientes previamente escolhidos pelo cliente.",
-
-            features: [
-              "As carnes são preparadas na churrasqueira, com queijo derretido na finalização",
-              "Os convidados montam seus próprios hambúrgueres",
-              "Serviço contínuo e organizado",
-            ],
-          },
-        },
-
-        breads: [
-          // 2 opções
-            {
-              id: "pao-brioche",
-              name: "Pão brioche",
-              featured: false,
-              available: true,
-            },
-            {
-              id: "pao-australiano",
-              name: "Pão australiano",
-              featured: false,
-              available: true,
-            },
-        ],
-
-        meats: [
-            // GADO
-            {
-              id: "paleta-bovina",
-              name: "Paleta bovina",
-              category: "beef",
-              featured: false,
-              available: true,
-            },
-            {
-              id: "costela-bovina",
-              name: "Costela bovina",
-              category: "beef",
-              featured: false,
-              available: true,
-            },
-            // PORCO
-            {
-              id: "copa-lombo",
-              name: "Copa Lombo",
-              category: "pork",
-              featured: false,
-              available: true,
-            },
-            // CORDEIRO
-            {
-              id: "cordeiro",
-              name: "Cordeiro",
-              category: "lamb",
-              featured: false,
-              available: true,
-            },            
-          ],
-
-        ingredients: [
-            {
-              id: "alface",
-              name: "Alface",
-              category: "salad",
-              featured: false,
-              available: true,
-            },      
-             {
-              id: "tomate",
-              name: "Tomate",
-              category: "salad",
-              featured: false,
-              available: true,
-            },       
-            {
-              id: "queijo-mussarela",
-              name: "Queijo mussarela",
-              category: "cheese",
-              featured: false,
-              available: true,
-            },                 
-            {
-              id: "queijo-cheddar",
-              name: "Queijo cheddar",
-              category: "cheese",
-              featured: false,
-              available: true,
-            },                   
-            {
-              id: "cebola-caramelizada",
-              name: "Cebola caramelizada",
-              category: "salad",
-              featured: false,
-              available: true,
-            },         
-            {
-              id: "bacon",
-              name: "Bacon",
-              featured: false,
-              available: true,
-            },       
-            {
-              id: "picles",
-              name: "Picles",
-              category: "salad",
-              featured: false,
-              available: true,
-            },                           
-          ],
-
-        optionalItems: [
-          {
-            id: "batatas-fritas",
-            name: "Batatas fritas",
-            description:
-              "Preparadas na hora em fritadeira profissional de balcão",
-            featured: false,
-            available: true,
-          },
-        ],
-
-        minGuests: 15,
-
-        pricePerPerson: 60,
-
-        priceNote: "a partir de 20 pessoas",
-
-        images: [],
-      },
-  },
-// ESPETINHO
-  {
-    id: "espetinhos",
-    active: false,
-
-    title: "Estação de Espetinhos",
-    icon: MdOutlineKebabDining,
-    image: laBratcheImage,
-    description: "Diversos sabores no espetinho, preparados na hora para deixar seu evento ainda mais completo",
-    
-  },
 ]
 export const meatCategories = [
   {
@@ -564,3 +393,45 @@ export const meatCategories = [
     special: true,
   },
 ];
+
+
+
+
+
+
+
+// FUTURO
+// import { GiBarbecue, GiHamburger, MdOutlineKebabDining } from "react-icons/gi";
+// import laBratcheImage from "../assets/images/LaBratche.png";
+
+// export const experiences = [
+//   {
+//     id: "churrasco",
+//     active: true,
+//     title: "Churrasco Premium",
+//     icon: GiBarbecue,
+//     image: laBratcheImage,
+//     description:
+//       "O churrasco tradicional levado a outro nível. Carnes selecionadas, ponto perfeito e acompanhamentos especiais.",
+//   },
+
+//   {
+//     id: "hamburguer",
+//     active: false,
+//     title: "Burger Experience",
+//     icon: GiHamburger,
+//     image: laBratcheImage,
+//     description:
+//       "Hambúrgueres artesanais feitos na hora em uma estação completa com ingredientes frescos e de qualidade.",
+//   },
+
+//   {
+//     id: "espetinhos",
+//     active: false,
+//     title: "Estação de Espetinhos",
+//     icon: MdOutlineKebabDining,
+//     image: laBratcheImage,
+//     description:
+//       "Diversos sabores no espetinho, preparados na hora para deixar seu evento ainda mais completo.",
+//   },
+// ];
