@@ -1,13 +1,4 @@
 
-{/* <MenuSection
-    id="meats"
-    variant="meats"
-    eyebrow=" Da brasa à mesa"
-    title="Carnes selecionadas"
-    description="Cortes selecionados e preparados na brasa para valorizar cada sabor."
-    image={meatsImage}
-    items={experience.details.meats}
-/> */}
 import { useState } from "react";
 
 export default function MenuSection({

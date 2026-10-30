@@ -5,12 +5,16 @@ import Experiences from './sections/Experiences'
 import Gallery from './sections/Gallery'
 import Contact from './sections/Contact'
 import Footer from './sections/Footer'
+import Hamburguer from './sections/Hamburguer'
+import Churrasco from './sections/Churrasco'
 
 function App() {
   return (
     <Layout>
       <Hero/>
-      <Experiences/>
+      <Churrasco/>
+      <Hamburguer />
+      {/* <Experiences/> */}
       <Gallery/>
       <Contact/>
       <Footer/>
