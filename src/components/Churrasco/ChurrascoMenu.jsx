@@ -78,7 +78,7 @@ export default function ChurrascoMenu({ details }) {
           <img
             src={meatsImage}
             alt="Carnes sendo preparadas na brasa"
-            className="h-[320px] w-full object-cover transition-transform duration-700 hover:scale-105 sm:h-[450px]"
+            className="h-[320px] w-full object-cover object-[70%_center] transition-transform duration-700 hover:scale-105 sm:h-[450px]"
           />
 
           <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent px-6 pb-6 pt-16 sm:px-8 sm:pb-8">

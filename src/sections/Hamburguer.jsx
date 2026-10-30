@@ -32,7 +32,7 @@ export default function Hamburguer() {
           <img
             src={hamburguer.image}
             alt="Burger Experience"
-            className="h-[420px] w-full rounded-2xl object-cover sm:h-[560px]"
+            className="h-[420px] w-full rounded-2xl object-cover object-[90%_center] sm:h-[560px]"
           />
         </section>
 
