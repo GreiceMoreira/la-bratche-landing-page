@@ -286,6 +286,48 @@ export const experiences = [
             featured: false,
             available: true,
           },
+          {
+            id: "portobello-gorgonzola",
+            name: "Portobello recheado com gorgonzola",
+            description: "Cogumelo portobello recheado com queijo gorgonzola",
+            featured: false,
+            available: true,
+          },
+          {
+            id: "carpaccio-carne-cipriani",
+            name: "Carpaccio de carne ao molho Cipriani",
+            description: "Finas fatias de carpaccio de carne servidas com molho Cipriani",
+            featured: false,
+            available: true,
+          },
+          {
+            id: "provolone-mel-trufado",
+            name: "Provolone com mel trufado",
+            description: "Provolone assado com mel trufado e tomate confitado",
+            featured: false,
+            available: true,
+          },
+          {
+            id: "bruschetta-tomate-bacon",
+            name: "Bruschetta de tomate confitado e bacon",
+            description: "Pão grelhado com manteiga de alho frito, tomate confitado, bacon crocante, parmesão e manjericão",
+            featured: false,
+            available: true,
+          },
+          {
+            id: "bruschetta-pupunha",
+            name: "Bruschetta de pupunha",
+            description: "Pão grelhado com carpaccio de pupunha, alcaparras, parmesão, flor de sal, limão-siciliano e azeite de oliva",
+            featured: false,
+            available: true,
+          },
+          {
+            id: "ostras-manteiga-ervas",
+            name: "Ostras na manteiga com ervas",
+            description: "Ostras com manteiga, pimenta-do-reino, limão-siciliano, salsa e cebolinha",
+            featured: false,
+            available: true,
+          },
         ],
 
       desserts: [
