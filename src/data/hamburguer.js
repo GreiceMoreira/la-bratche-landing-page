@@ -156,8 +156,8 @@ export const hamburguer = {
       },
     ],
 
-    minGuests: 15,
-    pricePerPerson: 60,
+    minGuests: 20,
+    pricePerPerson: 85,
     priceNote: "a partir de 20 pessoas",
 
     images: [],
